@@ -1,0 +1,142 @@
+/* Set background */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('./Background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+/* Main App container */
+.App {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Input section */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 80%; /* Increase width */
+  max-width: 600px; /* Control maximum width */
+}
+
+
+/* Input box */
+input {
+  padding: 12px 20px;
+  width: 65%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* Add button */
+.add-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #4e9af1;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  background: #367dc9;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* List of todos */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+/* Single todo item */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+}
+
+/* Task text */
+.task-text {
+  flex-grow: 1;
+  text-align: left;
+  padding-right: 10px;
+  word-break: break-word;
+}
+
+/* Delete button */
+li button {
+  background: #ff4d6d;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:hover {
+  background: #e0435d;
+}
